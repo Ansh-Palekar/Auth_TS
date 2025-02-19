@@ -97,7 +97,7 @@ app.get("/main",async function(req,res) {
 
 
 app.get("/logout",async function(req,res) {
-    res.cookie("token","");
+    res.cookie("token","");  //delete the token value
     res.send("cookie deleted");
 });
 
