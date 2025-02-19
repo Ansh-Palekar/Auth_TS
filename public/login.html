@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  </head>
+  <body>
+    <div class="flex flex-col h-screen ">
+
+      <div class="navbar bg-neutral text-neutral-content">
+        <button class="btn btn-ghost text-xl">This is Login Form</button>
+      </div>
+
+
+      <div class="form border-2 border-solid grow r">
+
+
+        <form method="post" action="/login" class=" flex flex-col items-center p-5 gap-7 border border-solid">
+
+        <fieldset class="fieldset">
+          <legend class="fieldset-legend text-xl">What is your Email</legend>
+          <input type="text" name="email" class="input" placeholder="Type here" />
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend class="fieldset-legend text-xl">What is your Password </legend>
+          <input type="text" name="password" class="input" placeholder="Type here" />
+        </fieldset>
+
+        <button class="btn btn-active btn-primary self-center text-lg">Submit</button>
+
+        </form>
+
+
+
+      </div>
+      
+    </div>
+  </body>
+</html>
